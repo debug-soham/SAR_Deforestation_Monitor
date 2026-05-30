@@ -1,0 +1,16 @@
+# sar_core/Cargo.toml
+
+[package]
+name = "sar-core"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "sar_core"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.28", features = ["extension-module"] }
+numpy = "0.28"
+rayon = "1.8"
+ndarray = { version = "0.15", features = ["rayon"] }

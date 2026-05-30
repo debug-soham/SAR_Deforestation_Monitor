@@ -1,0 +1,12 @@
+# Environments
+.venv/
+__pycache__/
+
+# Data
+data/raw/*.tif
+data/processed/*.tif
+data/processed/*.npy
+
+# Rust compilation artifacts
+sar_core/target/
+Cargo.lock
